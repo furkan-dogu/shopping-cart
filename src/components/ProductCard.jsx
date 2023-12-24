@@ -1,7 +1,9 @@
 import axios from "axios";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({item, getProduct}) => {
+  const navigate = useNavigate()
 
   const handlePlus = async () => {
 
@@ -19,19 +21,18 @@ const ProductCard = ({item, getProduct}) => {
     } else {
       handleRemove()
     }
-
-
   }
 
   const handleRemove = async () => {
     const url = "https://6587fc9c90fa4d3dabf950ae.mockapi.io/products"
     await axios.delete(`${url}/${item.id}`)
+    getProduct()
   }
 
   const {image, name, price, dampingRate, amount, id} = item
 
   return (
-    <div className="card shadow-lg mb-3" key={id}>
+    <div className="card shadow-lg mb-3">
       <div className="row g-0">
         <div className="col-md-5">
           <img
@@ -44,7 +45,7 @@ const ProductCard = ({item, getProduct}) => {
         </div>
         <div className="col-md-7">
           <div className="card-body">
-            <h5 className="card-title" role="button">
+            <h5 className="card-title" role="button" onClick={() => navigate(`/updateproduct/${name}`, {state: {name, image, price, dampingRate, amount, id},})}>
               {name}
             </h5>
             <div className="product-price">

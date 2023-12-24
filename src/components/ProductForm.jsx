@@ -1,10 +1,10 @@
-const ProductForm = ({ formData, handleChange, handleSubmit }) => {
+const ProductForm = ({ formData, handleChange, handleSubmit, title }) => {
   return (
-    <article id="add-product" className="mb-4 mt-4">
-      <h1 className="text-center">Product</h1>
+    <article id="add-product" className="mb-4 mt-4 text-white">
+      <h1 className="text-center">{title} Product</h1>
       <form className="p-2" onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label htmlFor="add-name" className="form-label">
+          <label htmlFor="name" className="form-label">
             Product Name
           </label>
           <input
@@ -17,7 +17,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit }) => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="add-price" className="form-label">
+          <label htmlFor="price" className="form-label">
             Product Price
           </label>
           <input
@@ -30,7 +30,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit }) => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="add-quantity" className="form-label">
+          <label htmlFor="amount" className="form-label">
             Product Quantity
           </label>
           <input
@@ -42,7 +42,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit }) => {
             onChange={handleChange}
           />
         </div>
-        <label htmlFor="add-image" className="form-label">
+        <label htmlFor="image" className="form-label">
           Product Image
         </label>
         <div className="input-group mb-3">

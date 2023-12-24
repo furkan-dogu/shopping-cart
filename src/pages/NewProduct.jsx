@@ -5,9 +5,9 @@ import { useState } from "react";
 const newData = {
   name: "",
   image: "",
-  price: 0,
+  price: "",
   dampingRate: 0.8,
-  amount: 0,
+  amount: "",
 };
 
 const NewProduct = () => {
@@ -30,6 +30,7 @@ const NewProduct = () => {
         handleSubmit={handleSubmit}
         handleChange={handleChange}
         formData={formData}
+        title="New"
       />
     </div>
   );

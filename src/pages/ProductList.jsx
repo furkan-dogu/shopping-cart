@@ -27,19 +27,21 @@ const ProductList = () => {
   }, []);
 
   if (err) {
-    return <p>Something went wrong</p>;
+    return <div className="text-center mt-5 text-white">
+      <p>Something went wrong</p>
+    </div>
   }
 
   return (
     <div className="container mt-3">
       <div className={"bg-light d-sm-block d-md-flex"}>
         {loading ? (
-          <p className="text-center text-danger w-100">Loading....</p>
+          <p className="text-center text-danger w-100 bg-transparent">Loading....</p>
         ) : data.length ? (
           <>
             <article id="product-panel" className="col-md-5">
               {data.map((item) => (
-                <ProductCard item={item} getProduct={getProduct} />
+                <ProductCard item={item} getProduct={getProduct} key={item.id} />
               ))}
             </article>
 

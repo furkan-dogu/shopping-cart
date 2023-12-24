@@ -58,7 +58,7 @@ const About = () => {
                 <button className="btn btn-primary px-4 ms-3">
                   <a
                     className="text-decoration-none text-white"
-                    href="https://github.com/furkan-dogu"
+                    href="https://www.linkedin.com/in/furkan-dogu/"
                     target="true">
                     Contact
                   </a>
