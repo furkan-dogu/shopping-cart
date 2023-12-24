@@ -1,20 +1,4 @@
-import { useState } from "react";
-
-const ProductForm = () => {
-  const newData = {
-    name: "",
-    image: "",
-    price: 0,
-    dampingRate: 0,
-    amount: 0,
-  };
-
-  const [formData, setFormData] = useState(newData)
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-  }
-  
+const ProductForm = ({ formData, handleChange, handleSubmit }) => {
   return (
     <article id="add-product" className="mb-4 mt-4">
       <h1 className="text-center">Product</h1>
@@ -23,7 +7,14 @@ const ProductForm = () => {
           <label htmlFor="add-name" className="form-label">
             Product Name
           </label>
-          <input type="text" className="form-control" id="add-name" required />
+          <input
+            type="text"
+            className="form-control"
+            id="name"
+            value={formData.name}
+            required
+            onChange={handleChange}
+          />
         </div>
         <div className="mb-3">
           <label htmlFor="add-price" className="form-label">
@@ -32,8 +23,10 @@ const ProductForm = () => {
           <input
             type="number"
             className="form-control"
-            id="add-price"
+            id="price"
+            value={formData.price}
             required
+            onChange={handleChange}
           />
         </div>
         <div className="mb-3">
@@ -43,8 +36,10 @@ const ProductForm = () => {
           <input
             type="number"
             className="form-control"
-            id="add-quantity"
+            id="amount"
+            value={formData.amount}
             required
+            onChange={handleChange}
           />
         </div>
         <label htmlFor="add-image" className="form-label">
@@ -57,9 +52,11 @@ const ProductForm = () => {
           <input
             type="url"
             className="form-control"
-            id="add-image"
+            id="image"
+            value={formData.image}
             aria-describedby="basic-addon3"
             required
+            onChange={handleChange}
           />
         </div>
         <div className="text-center">
