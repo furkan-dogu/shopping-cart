@@ -1,4 +1,4 @@
-# React Weather App
+# Shopping Cart
 
 <div align="center">
   <img src="./src/assets/shopping-cart.gif" />
@@ -10,7 +10,7 @@ This project I created with React includes a mock API used for simulating a shop
 
 ## Live Demo
 
-[React Weather App]()
+[Shopping Cart](https://shopping-cart-gamma-snowy.vercel.app/)
 
 ## Features
 
