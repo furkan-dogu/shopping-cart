@@ -21,6 +21,9 @@ This project I created with React includes a mock API used for simulating a shop
 ## Technologies Used
 
 - React
+- React Router Dom
+- [React Bootstrap](https://react-bootstrap.netlify.app/)
+- [Bootstrap](https://getbootstrap.com/)
 - Axios for API requests
 - [Mockapi](https://mockapi.io/) for data
 - Icons from [Font Awesome](https://fontawesome.com/icons)
