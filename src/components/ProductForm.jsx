@@ -14,6 +14,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, title }) => {
             value={formData.name}
             required
             onChange={handleChange}
+            autoComplete="off"
           />
         </div>
         <div className="mb-3">
@@ -57,6 +58,7 @@ const ProductForm = ({ formData, handleChange, handleSubmit, title }) => {
             aria-describedby="basic-addon3"
             required
             onChange={handleChange}
+            autoComplete="off"
           />
         </div>
         <div className="text-center">

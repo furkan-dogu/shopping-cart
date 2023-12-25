@@ -34,9 +34,6 @@ const About = () => {
                   <i className="fa-brands fa-facebook" />
                 </li>
                 <li>
-                  <i className="fa-brands fa-dribbble" />
-                </li>
-                <li>
                   <i className="fa-brands fa-instagram" />
                 </li>
                 <li>
@@ -47,17 +44,17 @@ const About = () => {
                 </li>
               </ul>
               <div className="buttons">
-                <button className="btn btn-outline-primary px-4">
+                <button className="btn px-4">
                   <a
-                    className="text-decoration-none text-black "
+                    className="text-decoration-none text-white"
                     href="https://github.com/furkan-dogu"
                     target="true">
                     Message
                   </a>
                 </button>
-                <button className="btn btn-primary px-4 ms-3">
+                <button className="btn px-4 ms-3">
                   <a
-                    className="text-decoration-none text-white"
+                    className="text-decoration-none text-dark"
                     href="https://www.linkedin.com/in/furkan-dogu/"
                     target="true">
                     Contact

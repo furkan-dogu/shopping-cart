@@ -7,7 +7,7 @@ const ProductCard = ({item, getProduct}) => {
 
   const handlePlus = async () => {
 
-      const url = "https://6587fc9c90fa4d3dabf950ae.mockapi.io/products"
+      const url = `https://6587fc9c90fa4d3dabf950ae.mockapi.io/products`
       await axios.put(`${url}/${item.id}`, {...item, amount: Number(item.amount)+1})
     
     getProduct()
