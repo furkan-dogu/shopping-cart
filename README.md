@@ -8,6 +8,13 @@
 
 This project I created with React includes a mock API used for simulating a shopping cart. This API simulates basic shopping operations such as listing products, adding items to the cart, and removing items from the cart.
 
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Skeleton](#project-skeleton)
+- [Screenshots](#screenshots)
+
 ## Live Demo
 
 [Shopping Cart](https://shopping-cart-gamma-snowy.vercel.app/)
